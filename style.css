@@ -1,0 +1,182 @@
+body {
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b2f8ff+0,070bff+26,35ff5a+66,fb955e+100 */
+background: #b2f8ff; /* Old browsers */
+background: -moz-linear-gradient(45deg, #b2f8ff 0%, #070bff 26%, #35ff5a 66%, #fb955e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #b2f8ff 0%,#070bff 26%,#35ff5a 66%,#fb955e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #b2f8ff 0%,#070bff 26%,#35ff5a 66%,#fb955e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2f8ff', endColorstr='#fb955e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+margin: 0;
+padding: 0;
+}
+
+@font-face {
+  font-family: comic;
+  src: comic.ttf;
+}
+
+.mainframe  {
+  margin: 0 auto;
+  width: 900px;
+  font-family: comic;
+  background-color: #f2f2f2;
+}
+
+.maintext {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.calendarwrap {
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+
+}
+
+.calendardate {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f2f2f2;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.navbar {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff0000+0,ffee07+27,ff00b2+49,f7ff60+100 */
+  background: #ff0000; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #ff0000 0%, #ffee07 27%, #ff00b2 49%, #f7ff60 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #ff0000 0%,#ffee07 27%,#ff00b2 49%,#f7ff60 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #ff0000 0%,#ffee07 27%,#ff00b2 49%,#f7ff60 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#f7ff60',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+    height: 58px;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 13px;
+    display: block;
+}
+
+/* LINK STYLING */
+.navbar a {
+    display: inline-block;
+    padding-right: 2px;
+    font-family: comic;
+}
+a:visited {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+a:link {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+  text-shadow: 0 -1px 0 white,
+               0 1px 0 white,
+               0 2px 0 white,
+               0 3px 0 white,
+               0 4px 0 white,
+               0 5px 0 white,
+               0 6px 0 white,
+               0 7px 0 white,
+               0 8px 0 white,
+               0 9px 0 white,
+               0 10px 0 white,
+               0 11px 0 white,
+
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+.active {
+text-shadow: 0 -1px 0 white,
+             0 1px 0 white,
+             0 2px 0 #000000,
+             0 3px 0 white,
+             0 4px 0 #000000,
+             0 5px 0 white,
+             0 6px 0 #000000,
+             0 7px 0 white,
+             0 8px 0 #000000,
+             0 9px 0 white,
+             0 10px 0 #000000,
+             0 11px 0 white,
+
+             0 6px 1px rgba(0,0,0,.1),
+             0 0 5px rgba(0,0,0,.1),
+             0 1px 3px rgba(0,0,0,.3),
+             0 3px 5px rgba(0,0,0,.2),
+             0 5px 10px rgba(0,0,0,.25),
+             0 10px 10px rgba(0,0,0,.2),
+             0 20px 20px rgba(0,0,0,.15);
+}
+
+
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+/* LINK STYLING ENDS */
+
+
+/* Center navbar text */
+.menu-container {
+    width: auto;
+    height: 100%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.menuwrapper {
+    display: table;
+    width: 540px;
+    margin: 0 auto;
+}
+
+
+
+/* MEDIAQUERYS */
+
+@media screen and (max-width: 992px) {
+  .mainframe  {
+    width: 100%;
+  }
+}
+
+@media screen and (orientation : portrait) {
+  .menuwrapper {
+      display: table;
+      width: 100%;
+      margin: 0 auto;
+  }
+
+  .navbar {
+      font-size: 40px;
+      height: 76px;
+  }
+    }
