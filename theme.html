@@ -27,22 +27,28 @@
     </div>
     </header>
     <!--NAVBAR ENDS-->
-<div class="maintext">
+
   <br>
-<center><u>säsong 3 leaderboard</u></center>
-<img
-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQA-azZf_fM9CHGsmABW-wNdT1i7DMEEM7pcStdA04IEwQ6ZnnrevzMXMrw4pqDjiSISs-UjlVIZQsr/pubchart?oid=643203979&format=image"
-width="100%">
-<br>
-<center><u>säsong 2 final score</u></center>
-</div>
-<img
-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQA-azZf_fM9CHGsmABW-wNdT1i7DMEEM7pcStdA04IEwQ6ZnnrevzMXMrw4pqDjiSISs-UjlVIZQsr/pubchart?oid=643203979&format=image"
-width="100%">
+  <script>
+function play(){
+   var audio = document.getElementById("theme");
+   audio.play();
+             }
+function stop(){
+  var audio = document.getElementById("theme")
+  audio.pause();
+  audio.currentTime = 0;
+}
+</script>
 
+<audio id="theme" src="Makio_Theme.mp3"></audio>
+<audio autoplay id="theme"></audio>
+
+  <div class="songbutton" type="button" value="PLAY"  onmousedown="play()" onmouseup="stop()">&#9834;&#9834;&#9834;
+  </div>
 
 </div>
-</div>
+
 
 </body>
 </html>
