@@ -5,7 +5,7 @@
   <meta charset="utf-8">
 
   <title>Makio Party</title>
-  <meta name="description" content="The HTML5 Herald">
+  <meta name="description" content="makio party">
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="style.css?v=1.0">
@@ -32,10 +32,13 @@
   <script>
 function play(){
    var audio = document.getElementById("theme");
+   $(document).on('click touchstart', function () {
    audio.play();
+   audio.volume = 0.2;
              }
 function stop(){
   var audio = document.getElementById("theme")
+  $(document).on('click touchend', function () {
   audio.pause();
   audio.currentTime = 0;
 }
