@@ -32,13 +32,11 @@
   <script>
 function play(){
    var audio = document.getElementById("theme");
-   $(document).on('click touchstart', function () {
    audio.play();
    audio.volume = 0.2;
              }
 function stop(){
   var audio = document.getElementById("theme")
-  $(document).on('click touchend', function () {
   audio.pause();
   audio.currentTime = 0;
 }
@@ -47,7 +45,7 @@ function stop(){
 <audio id="theme" src="Makio_Theme.mp3"></audio>
 <audio autoplay id="theme"></audio>
 
-  <div class="songbutton" type="button" value="PLAY"  onmousedown="play()" onmouseup="stop()">&#9834;&#9834;&#9834;
+  <div class="songbutton" type="button" value="PLAY"  onmousedown="play()" onmouseup="stop()" ontouchstart="play()" ontouchend="stop()">&#9834;&#9834;&#9834;
   </div>
 
 </div>
