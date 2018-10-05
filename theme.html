@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Makio Party</title>
+  <title>makio party</title>
   <meta name="description" content="makio party">
   <meta name="author" content="SitePoint">
 
@@ -13,43 +13,41 @@
 </head>
 <body>
 
-<div class="mainframe">
+  <div class="mainframe">
 
-  <!--NAVBAR BEGINS-->
-  <header class="navbar font">
+    <!--NAVBAR BEGINS-->
+    <header class="navbar font">
       <div class="menuwrapper">
-      <div class="active menu-container"><a href="index.html">stats</a></div>
-      <div class="menu-container"><a href="kalender.html">kalender</a></div>
-      <div class="menu-container"><a href="spel.html">spel</a></div>
-      <div class="menu-container"><a href="players.html">players</a></div>
-      <div class="menu-container"><a href="merch.html">merch</a></div>
-      <div class="menu-container"><a href="theme.html">&#9834;&#9834;&#9834;</a></div>
-    </div>
+        <div class="menu-container"><a href="index.html">stats</a></div>
+        <div class="menu-container"><a href="kalender.html">kalender</a></div>
+        <div class="menu-container"><a href="spel.html">spel</a></div>
+        <div class="menu-container"><a href="members.html">members</a></div>
+        <div class="menu-container"><a href="merch.html">merch</a></div>
+        <div class="active menu-container"><a href="theme.html">&#9834;&#9834;&#9834;</a></div>
+      </div>
     </header>
     <!--NAVBAR ENDS-->
 
-  <br>
-  <script>
-function play(){
-   var audio = document.getElementById("theme");
-   audio.play();
-   audio.volume = 0.2;
-             }
-function stop(){
-  var audio = document.getElementById("theme")
-  audio.pause();
-  audio.currentTime = 0;
-}
-</script>
+    <script>
+    function play(){
+      var audio = document.getElementById("theme");
+      audio.play();
+      audio.volume = 0.1;
+    }
+    function stop(){
+      var audio = document.getElementById("theme")
+      audio.pause();
+      audio.currentTime = 0;
+    }
+    </script>
 
-<audio id="theme" src="Makio_Theme.mp3"></audio>
-<audio autoplay id="theme"></audio>
+    <audio id="theme" src="Makio_Theme.mp3"></audio>
+    <audio autoplay id="theme"></audio>
 
-  <div class="songbutton" type="button" value="PLAY"  onmousedown="play()" onmouseup="stop()" ontouchstart="play()" ontouchend="stop()">&#9834;&#9834;&#9834;
+    <div class="songbutton unselectable" type="button" value="PLAY" onmousedown="play()" onmouseup="stop()" ontouchstart="play()" ontouchend="stop()">
+      &#9834;&#9834;&#9834;
+    </div>
+
   </div>
-
-</div>
-
-
 </body>
 </html>

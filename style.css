@@ -1,5 +1,4 @@
 body {
-
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1500ff+0,60fff9+25,1500ff+50,60fff9+75,1500ff+100 */
   background: #1500ff; /* Old browsers */
   background: -moz-linear-gradient(45deg, #1500ff 0%, #60fff9 25%, #1500ff 50%, #60fff9 75%, #1500ff 100%); /* FF3.6-15 */
@@ -9,10 +8,15 @@ body {
 margin: 0;
 padding: 0;
 
-background-size: 800% 800%;
--webkit-animation: Gradient 25s linear infinite;
--moz-animation: Gradient 25s linear infinite;
-animation: Gradient 25s linear infinite;
+background-size: 200% 200%;
+-webkit-animation: Gradient 20s linear infinite;
+-moz-animation: Gradient 20s linear infinite;
+animation: Gradient 20s linear infinite;
+}
+
+html {
+    width:100vw;
+    overflow-x:hidden;
 }
 
 @-webkit-keyframes Gradient {
@@ -49,9 +53,19 @@ animation: Gradient 25s linear infinite;
   src: fonts/comic.ttf;
 }
 
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .mainframe  {
   margin: 0 auto;
   width: 900px;
+  height: 100vh;
   font-family: comic;
   background-color: #f2f2f2;
 }
@@ -62,17 +76,15 @@ animation: Gradient 25s linear infinite;
 }
 
 .calendarwrap {
-  padding-top: 20px;
-  padding-bottom: 20px;
   text-align: center;
   margin: 0 auto;
+  background: #f2f2f2;
 }
 
 .calendardate {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-bottom: 19px;
+  margin-left: 7px;
+  margin-right: 7px;
   width: 380px;
   padding-top: 25px;
   padding-bottom: 24px;
@@ -85,7 +97,6 @@ animation: Gradient 25s linear infinite;
   background: -webkit-linear-gradient(45deg, #ff00b2 0%,#6090ff 25%,#ff00b2 50%,#6090ff 75%,#ff00b2 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(45deg, #ff00b2 0%,#6090ff 25%,#ff00b2 50%,#6090ff 75%,#ff00b2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff00b2', endColorstr='#ff00b2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
   background-size: 400% 400%;
 }
 
@@ -153,6 +164,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8800', end
     padding-right: 0%;
     padding-top: 13px;
     display: block;
+    margin-bottom: 50px;
 }
 
 /* LINK STYLING */
@@ -173,49 +185,11 @@ a:link {
 }
 
 a:hover {
-  text-shadow: 0 -1px 0 white,
-               0 1px 0 white,
-               0 2px 0 white,
-               0 3px 0 white,
-               0 4px 0 white,
-               0 5px 0 white,
-               0 6px 0 white,
-               0 7px 0 white,
-               0 8px 0 white,
-               0 9px 0 white,
-               0 10px 0 white,
-               0 11px 0 white,
-
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
+  text-decoration-line: underline;
 }
 
 .active {
-text-shadow: 0 -1px 0 white,
-             0 1px 0 white,
-             0 2px 0 #000000,
-             0 3px 0 white,
-             0 4px 0 #000000,
-             0 5px 0 white,
-             0 6px 0 #000000,
-             0 7px 0 white,
-             0 8px 0 #000000,
-             0 9px 0 white,
-             0 10px 0 #000000,
-             0 11px 0 white,
-
-             0 6px 1px rgba(0,0,0,.1),
-             0 0 5px rgba(0,0,0,.1),
-             0 1px 3px rgba(0,0,0,.3),
-             0 3px 5px rgba(0,0,0,.2),
-             0 5px 10px rgba(0,0,0,.25),
-             0 10px 10px rgba(0,0,0,.2),
-             0 20px 20px rgba(0,0,0,.15);
+  text-decoration-line: underline;
 }
 
 
@@ -244,6 +218,8 @@ a:-webkit-any-link {
 }
 
 .songbutton {
+  webkit-box-shadow: 10px 10px 0; box-shadow: 10px 10px 0;
+  margin-top: 8vh;
   font-size: 800%;
   border-radius: 100%;
   width: 400px;
@@ -261,6 +237,7 @@ a:-webkit-any-link {
   background: -webkit-linear-gradient(45deg, #ff00b2 0%,#6090ff 25%,#ff00b2 50%,#6090ff 75%,#ff00b2 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(45deg, #ff00b2 0%,#6090ff 25%,#ff00b2 50%,#6090ff 75%,#ff00b2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff00b2', endColorstr='#ff00b2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 
 .songbutton:hover {
@@ -285,6 +262,9 @@ a:-webkit-any-link {
 	-webkit-animation: Gradient 1.03s linear infinite;
 	-moz-animation: Gradient 1.03s linear infinite;
 	animation: Gradient 1.03s linear infinite;
+
+transform: translateY(10px) translateX(10px);;
+webkit-box-shadow: 0px 0px 0; box-shadow: 0px 0px 0;
 }
 
   @-webkit-keyframes Gradient {
@@ -326,8 +306,6 @@ a:-webkit-any-link {
     height: 60vw;
     font-size: 16vw;
     line-height: 55vw;
-
-
   }
 }
 
@@ -343,8 +321,13 @@ a:-webkit-any-link {
   }
   .calendardate  {
     width: 90%;
+    margin-bottom: 10px;
     margin-left: 2%;
     margin-right: 2%;
+  }
+  .calendarwrap {
+      padding-top: 20px;
+      padding-bottom: 50px;
   }
   .maintext {
     font-size: 5vw;
