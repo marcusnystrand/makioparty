@@ -137,9 +137,9 @@ html {
 
 .statsimg {
   margin-top: 12px;
-  width: 108%;
-  height: 108%;
-  transform: translateX(-48px) translateY(-2.3vh);
+  width: 106%;
+  height: 106%;
+  transform: translateX(-36px) translateY(-2.3vh);
 }
 
 @-webkit-keyframes Gradient {
@@ -403,9 +403,9 @@ a:-webkit-any-link {
 
   .statsimg {
     margin-top: 38px;
-    width: 108%;
-    height: 108%;
-    transform: translateX(-48px) translateY(-2.3vh);
+    width: 103%;
+    height: 103%;
+    transform: translateX(-27px) translateY(-2.3vh);
   }
 
   .menuwrapper {
