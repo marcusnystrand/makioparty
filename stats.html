@@ -22,13 +22,49 @@
         stats
       </div>
       <div class="mainwrap">
-        <center><p>säsong 3 leaderboard</p></center>
+        <center><p>Vinnaren av säsong 3 presenteras om</p></center>
+        
+<p id="demo"></p>
 
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 16, 2018 18:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "Snart är det dags...";
+    }
+}, 1000);
+</script>
+
+
+<!–– 
         <div class="statscrop">
           <img class="statsimg"
             src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQA-azZf_fM9CHGsmABW-wNdT1i7DMEEM7pcStdA04IEwQ6ZnnrevzMXMrw4pqDjiSISs-UjlVIZQsr/pubchart?oid=643203979&format=image"
             width="100%">
       </div></div>
+––>
     </div>
   </body>
   </html>
