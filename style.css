@@ -133,6 +133,7 @@ html {
 
 .statscrop  {
   overflow: hidden;
+  display: none;
 }
 
 .statsimg {
