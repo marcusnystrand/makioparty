@@ -51,9 +51,10 @@ var x = setInterval(function() {
     + minutes + "m " + seconds + "s ";
     
     // If the count down is over, write some text 
+  var x = document.getElementById("statscrop");
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "Snart är det dags...";
+        x.style.display = "block";
     }
 }, 1000);
 </script>
