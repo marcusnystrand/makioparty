@@ -131,11 +131,6 @@ html {
   text-align: left;
 }
 
-.statscrop  {
-  overflow: hidden;
-  display: none;
-}
-
 .statsimg {
   margin-top: 12px;
   width: 106%;
