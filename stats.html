@@ -57,14 +57,14 @@ var countDownDate = new Date("Dec 6, 2018 18:00:00").getTime();
     if (distance < 0) {
         clearInterval(x);
       document.getElementById("statscrop").style.display = "block";
-          document.getElementById("demo").innerHTML = "Snart är det dags...";
+      document.getElementById("demo").innerHTML = "Snart är det dags...";
    
     }
 }, 1000);
 </script>
 
 
-<div class="statscrop">
+<div id="statscrop" class="statscrop">
           <img class="statsimg"
             src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQA-azZf_fM9CHGsmABW-wNdT1i7DMEEM7pcStdA04IEwQ6ZnnrevzMXMrw4pqDjiSISs-UjlVIZQsr/pubchart?oid=643203979&format=image"
             width="100%">
