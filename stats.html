@@ -30,14 +30,13 @@
         stats
       </div>
       <div class="mainwrap">
-        <center><p>Vinnaren av säsong 3 presenteras om</p>
-        
-<p id="demo"></p>
+        <center><p id="timer">Vinnaren av säsong 3 presenteras om</p>
+  
         </center>
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Dec 6, 2018 23:30:00").getTime();
+var countDownDate = new Date("Dec 6, 2018 23:33:00").getTime();
 
     var x = setInterval(function() {
     var now = new Date().getTime();
@@ -50,13 +49,14 @@ var countDownDate = new Date("Dec 6, 2018 23:30:00").getTime();
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
     // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    document.getElementById("timer").innerHTML = days + "d " + hours + "h "
     + minutes + "m " + seconds + "s ";
     
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(x);
       document.getElementById("statscrop").style.display = "block";
+      document.getElementById("timer").innerHTML = "säsong 3 final score";
     }
 }, 1000);
 </script>
