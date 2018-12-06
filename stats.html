@@ -30,7 +30,7 @@
         stats
       </div>
       <div class="mainwrap">
-        <center><p id="timer">Vinnaren av säsong 3 presenteras om</p>
+        <center><p id="timer"></p>
   
         </center>
 
@@ -49,7 +49,7 @@ var countDownDate = new Date("Dec 6, 2018 23:40:00").getTime();
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
     // Output the result in an element with id="demo"
-    document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+    document.getElementById("timer").innerHTML = "Vinnaren av säsong 3 presenteras om" + days + "d " + hours + "h "
     + minutes + "m " + seconds + "s ";
     
     // If the count down is over, write some text 
