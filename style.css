@@ -24,6 +24,7 @@ p {
 }
 
 
+
 @-webkit-keyframes Gradient {
   0% {  background-position: 0% 100%
   }
@@ -68,7 +69,6 @@ html {
   letter-spacing: -0.015em;
 }
 
-
 .menuwrapper {
   margin: 0 auto;
   overflow: hidden;
@@ -107,7 +107,7 @@ html {
 .header {
   padding-top: 20px;
   padding-bottom: 25px;
-  padding-left: 110px;
+  padding-left: 175px;
   padding-right: 60px;
   text-align: center;
 
@@ -125,11 +125,12 @@ html {
   float: right;
   top: 0;
   font-size:  25px;
-  line-height: 20px;
-  padding-top: 2px;
-  padding-bottom: 0px;
-  text-align: left;
+  text-align: right;
+  padding-top: 3px;
+  width: 124px;
 }
+
+
 
 .statsimg {
   margin-top: 12px;
@@ -191,6 +192,36 @@ html {
   padding-bottom: 60px;
 }
 
+.nav {
+  margin-bottom: 19px;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 180px;
+  padding-top: 33px;
+  padding-bottom: 33px;
+
+  display: inline-block;
+  border-radius: 18px;
+  text-align: center;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff0000+0,ffee07+50,ff0000+100 */
+  background: #ff0000; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #ff0000 0%, #ffee07 50%, #ff0000 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #ff0000 0%,#ffee07 50%,#ff0000 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #ff0000 0%,#ffee07 50%,#ff0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#ff0000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  background-size: 300% 300%;
+}
+
+.nav:hover {
+  -webkit-animation: Gradient 0.8s linear infinite;
+  -moz-animation: Gradient 0.8s linear infinite;
+  animation: Gradient 0.8s linear infinite;
+  background-size: 400% 400%;
+}
+
+
 .calendardate {
   margin-bottom: 19px;
   margin-left: 6px;
@@ -211,6 +242,7 @@ html {
   background-size: 400% 400%;
   line-height: 1em;
 }
+
 
 .current  {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff8800+0,ffec60+25,ff8800+50,ffec60+75,ff8800+100 */
@@ -370,6 +402,10 @@ a:-webkit-any-link {
   padding-bottom: 15px;
 }
 
+.statscrop  {
+  overflow: hidden;
+}
+
 
 /* MEDIAQUERYS */
 
@@ -418,9 +454,6 @@ a:-webkit-any-link {
 
   .menubutton {
     font-size:  50px;
-    line-height: 42px;
-    padding-top: 0px;
-    transform: translateY(-20px);
   }
 
   .header {
@@ -429,8 +462,9 @@ a:-webkit-any-link {
     padding-right: 5vw;
     height: 74px;
     padding-top: 50px;
-
   }
+
+
 
   .calendardate  {
     width: 90%;
