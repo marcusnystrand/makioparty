@@ -9,19 +9,20 @@
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="style.css?v=1.0">
+  <link rel="stylesheet" href="gradients.css?v=1.0">
 
 </head>
-<body>
+<body class="background">
   <div class="mainframe">
 
-<div class="header">
+<div class="header primarycolor">
 <a href="index.html">
 <div class="menubutton">
   huvudmeny
 </div></a>
 theme song
 </div>
-
+<div class="mainwrap">
     <script>
     function play(){
       var audio = document.getElementById("theme");
@@ -38,10 +39,10 @@ theme song
     <audio id="theme" src="Makio_Theme.mp3"></audio>
     <audio autoplay id="theme"></audio>
 
-    <div class="songbutton unselectable" type="button" value="PLAY" onmousedown="play()" onmouseup="stop()" ontouchstart="play()" ontouchend="stop()">
+    <div class="unselectable primarycolor songbutton" type="button" value="PLAY" onmousedown="play()" onmouseup="stop()" ontouchstart="play()" ontouchend="stop()">
       &#9834;&#9834;&#9834;
     </div>
   </div>
-
+</div>
 </body>
 </html>

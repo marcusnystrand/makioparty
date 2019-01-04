@@ -9,20 +9,14 @@
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="style.css?v=1.0">
+  <link rel="stylesheet" href="gradients.css?v=1.0">
 
 </head>
 
-  <style>
-.statscrop  {
-  display: none;
-  overflow: hidden;
-}
-</style>
-
-<body>
+<body class="background">
   <div class="mainframe">
 
-    <div class="header">
+    <div class="header primarycolor">
       <a href="stats-nav.html">
         <div class="menubutton">
           tillbaka
@@ -30,38 +24,6 @@
         totala stats
       </div>
       <div class="mainwrap">
-        <center><p id="timer"></p>
-
-        </center>
-
-        <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Dec 16, 2018 18:00:00").getTime();
-
-            var x = setInterval(function() {
-            var now = new Date().getTime();
-            var distance = countDownDate - now;
-
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Output the result in an element with id="demo"
-            document.getElementById("timer").innerHTML = "Statsen presenteras om<br>" + days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
-
-            // If the count down is over, write some text
-            if (distance < 0) {
-                clearInterval(x);
-              document.getElementById("statscrop").style.display = "block";
-              document.getElementById("timer").innerHTML = "";
-            }
-
-
-        }, 1000);
-        </script>
 
 <div id="statscrop" class="statscrop">
           <img class="statsimg"
