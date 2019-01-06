@@ -24,12 +24,12 @@ html {
 .mainframe  {
   margin: 0 auto;
   width: 900px;
+  height: 99vh;
   font-family: comic;
   font-weight: bold;
   font-size: 40px;
   line-height: 42px;
   letter-spacing: -0.015em;
-  height: auto;
 }
 
 .menuwrapper {
@@ -80,11 +80,12 @@ html {
   padding-left: 25px;
   padding-right: 25px;
   margin: 0 auto;
-  background: #efefef;
+  background-color: #efefef;
   padding-top: 25px;
   padding-bottom: 90px;
   line-height: 1.16em;
   border-radius: 0px 0px 11px 11px;
+  margin-bottom: 10px;
 }
 
 .centercontent  {
@@ -197,6 +198,19 @@ a:-webkit-any-link {
   }
 }
 
+.gallerywrap  {
+  text-align: left;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 0 auto;
+  background: #efefef;
+  height: auto;
+  padding-top: 25px;
+  padding-bottom: 90px;
+  border-radius: 0px 0px 11px 11px;
+
+}
+
 .gallery img {
   width: 100%;
   padding-bottom: 15px;
@@ -217,6 +231,11 @@ a:-webkit-any-link {
     width: 100%;
   }
 
+  .gallerywrap  {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
   .songbutton {
     width: 60vw;
     height: 60vw;
@@ -231,6 +250,11 @@ a:-webkit-any-link {
   margin-top: 7px;
   width: 210px;
 }
+
+  .gallerywrap  {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 
   .statsimg {
     margin-top: 38px;
