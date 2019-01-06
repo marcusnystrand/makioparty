@@ -206,6 +206,7 @@ a:-webkit-any-link {
   background: #f2f2f2;
   padding-top: 25px;
   padding-bottom: 90px;
+  border-radius: 0px 0px 11px 11px;
 }
 
 .gallery img {
