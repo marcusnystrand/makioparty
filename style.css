@@ -24,12 +24,13 @@ html {
 .mainframe  {
   margin: 0 auto;
   width: 900px;
-  height: 99vh;
   font-family: comic;
   font-weight: bold;
   font-size: 40px;
   line-height: 42px;
   letter-spacing: -0.015em;
+  background: #efefef;
+  height: auto;
 }
 
 .menuwrapper {
