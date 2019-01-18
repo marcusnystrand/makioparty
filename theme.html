@@ -20,7 +20,7 @@
 <div class="menubutton">
   huvudmeny
 </div></a>
-theme song
+hits
 </div>
 <div class="mainwrap">
     <script>
@@ -35,11 +35,31 @@ theme song
       audio.currentTime = 0;
     }
     </script>
+  
+      <script>
+    function play2(){
+      var audio = document.getElementById("theme2");
+      audio.play();
+      audio.volume = 0.1;
+    }
+    function stop2(){
+      var audio = document.getElementById("theme2")
+      audio.pause();
+      audio.currentTime = 0;
+    }
+    </script>
 
     <audio id="theme" src="Makio_Theme.mp3"></audio>
     <audio autoplay id="theme"></audio>
 
     <div class="unselectable primarycolor songbutton" type="button" value="PLAY" onmousedown="play()" onmouseup="stop()" ontouchstart="play()" ontouchend="stop()">
+      &#9834;&#9834;&#9834;
+    </div>
+  
+    <audio id="theme2" src="Makio_Theme_2.mp3"></audio>
+    <audio autoplay id="theme2"></audio>
+
+    <div class="unselectable primarycolor songbutton" type="button" value="PLAY" onmousedown="play2()" onmouseup="stop2()" ontouchstart="play2()" ontouchend="stop2()">
       &#9834;&#9834;&#9834;
     </div>
   </div>
