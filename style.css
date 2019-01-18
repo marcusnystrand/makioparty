@@ -187,14 +187,14 @@ a:-webkit-any-link {
   margin-top: 6vh;
   font-size: 20vh;
   border-radius: 100%;
-  width: 400px;
-  height: 400px;
+  width: 330px;
+  height: 330px;
   text-align: center;
   vertical-align: middle;
-  line-height: 380px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  line-height: 330px;
+  display: inline-block;
+  margin-left: 5vh;
+  margin-right: 5vh;
   }
 }
 
