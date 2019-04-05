@@ -246,6 +246,11 @@ a:-webkit-any-link {
 }
 
 @media screen and (orientation : portrait) {
+  
+  .menu-container {
+  font-size: 13vw;
+}
+
 
 .nav{
   margin-top: 7px;
