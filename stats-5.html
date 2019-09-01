@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>makio party</title>
+  <meta name="description" content="makio party">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="style.css?v=1.0">
+  <link rel="stylesheet" href="gradients.css?v=1.0">
+
+</head>
+
+  <style>
+.statscrop  {
+  display: none;
+  overflow: hidden;
+}
+</style>
+
+<body class="background">
+  <div class="mainframe">
+
+    <div class="header primarycolor">
+      <a href="stats-nav.html">
+        <div class="menubutton">
+          tillbaka
+        </div></a>
+        säsong 5 stats
+      </div>
+      <div class="mainwrap">
+        <center><p id="timer"></p>
+
+        </center>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jun 9, 2019 17:10:00").getTime();
+
+    var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="demo"
+    document.getElementById("timer").innerHTML = "Vinnaren av säsong 4 presenteras om<br>" + days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+
+    // If the count down is over, write some text
+    if (distance < 0) {
+        clearInterval(x);
+      document.getElementById("statscrop").style.display = "block";
+      document.getElementById("timer").innerHTML = "";
+    }
+
+
+}, 1000);
+</script>
+
+
+<div id="statscrop" class="statscrop">
+          <img class="statsimg"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQA-azZf_fM9CHGsmABW-wNdT1i7DMEEM7pcStdA04IEwQ6ZnnrevzMXMrw4pqDjiSISs-UjlVIZQsr/pubchart?oid=1391202721&format=image"
+            width="100%">
+
+            <img class="statsimg"
+              src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQA-azZf_fM9CHGsmABW-wNdT1i7DMEEM7pcStdA04IEwQ6ZnnrevzMXMrw4pqDjiSISs-UjlVIZQsr/pubchart?oid=68888751&format=image"
+              width="100%">
+
+          <img class="statsimg"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQA-azZf_fM9CHGsmABW-wNdT1i7DMEEM7pcStdA04IEwQ6ZnnrevzMXMrw4pqDjiSISs-UjlVIZQsr/pubchart?oid=883251385&format=image"
+            width="100%">
+      </div>
+
+
+
+    </div>
+    </div>
+  </body>
+  </html>
