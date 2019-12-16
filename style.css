@@ -215,6 +215,7 @@ a:-webkit-any-link {
 .gallery img {
   padding-bottom: 15px;
   max-height:90vh;
+  max-width:100%;
 }
 
 .statscrop  {
