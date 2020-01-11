@@ -1,0 +1,104 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>makio party</title>
+  <meta name="description" content="makio party">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="style.css?v=1.0">
+  <link rel="stylesheet" href="gradients.css?v=1.0">
+
+</head>
+<body class="background">
+  <div class="mainframe">
+
+<div class="header primarycolor">
+<a href="kalender-nav.html">
+<div class="menubutton">
+  tillbaka
+</div></a>
+säsong 6 kalender
+</div>
+
+    <div class="mainwrap centercontent">
+    
+      <div class="calendardate primarycolor">
+        makio party #51
+        <br>curve fever 2
+        <br> 26 januari
+        </div></a>
+
+      <div class="calendardate primarycolor">
+        makio party #52
+        <br>soldat
+        <br>9 februari
+  </div></a>
+
+      <div class="calendardate primarycolor">
+        makio party #53
+        <br><div class="smallertext">pirates, vikings & knights II</div>
+        23 februari
+  </div></a>
+
+      <div class="calendardate primarycolor">
+        makio party #54
+        <br>disco dodgeball
+        <br> 8 mars
+  </div></a>
+
+      <div class="calendardate primarycolor">
+        makio party #55
+        <br>votering #1
+        <br> 22 mars
+        </div></a>
+
+      <div class="calendardate primarycolor">
+        makio party #56
+        <br> redout: enhanced
+        <br> 5 april
+        </div></a>
+
+      <div class="calendardate primarycolor">
+        makio party #57
+        <br><div class="smallertext">pirates, vikings & knights II</div>
+         <br>19 april
+      </div>
+      </a>
+
+      <div class="calendardate primarycolor">
+        makio party #58
+        <br>rocket league
+        <br> 3 maj
+      </div>
+      </a>
+
+
+      <div class="calendardate primarycolor">
+        makio party #59
+        <br>stick fight
+        <br> 17 maj
+      </div>
+      </a>
+
+      <div class="calendardate primarycolor">
+        makio party #60
+        <br>votering #2
+        <br> 31 maj
+      </div>
+      </a>
+
+      <div class="calendardate primarycolor">
+        makio after party #6
+        <br>säsongsavslutning
+        <br> 14 juni
+      </div>
+      </a>
+      <br><br><br>
+    </div>
+
+  </div>
+</body>
+</html>
