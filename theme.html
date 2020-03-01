@@ -35,7 +35,7 @@ hits
       audio.currentTime = 0;
     }
     </script>
-  
+
       <script>
     function play2(){
       var audio = document.getElementById("theme2");
@@ -49,21 +49,41 @@ hits
     }
     </script>
 
+    <script>
+  function play3(){
+    var audio = document.getElementById("theme3");
+    audio.play();
+    audio.volume = 0.1;
+  }
+  function stop3(){
+    var audio = document.getElementById("theme3")
+    audio.pause();
+    audio.currentTime = 0;
+  }
+  </script>
+
   <center>
     <audio id="theme" src="Makio_Theme.mp3"></audio>
     <audio autoplay id="theme"></audio>
 
     <div class="unselectable primarycolor songbutton" type="button" value="PLAY" onmousedown="play()" onmouseup="stop()" ontouchstart="play()" ontouchend="stop()">
-      &#9834;&#9834;&#9834;
+      &#9834;
     </div>
-  
+
     <audio id="theme2" src="Makio_Theme_2.mp3"></audio>
     <audio autoplay id="theme2"></audio>
 
     <div class="unselectable primarycolor songbutton" type="button" value="PLAY" onmousedown="play2()" onmouseup="stop2()" ontouchstart="play2()" ontouchend="stop2()">
+      &#9834;&#9834;
+    </div>
+
+    <audio id="theme3" src="Makio_Party_Outro.mp3"></audio>
+    <audio autoplay id="theme3"></audio>
+
+    <div class="unselectable primarycolor songbutton" type="button" value="PLAY" onmousedown="play3()" onmouseup="stop3()" ontouchstart="play3()" ontouchend="stop3()">
       &#9834;&#9834;&#9834;
     </div>
-    
+
   </center>
   </div>
 </div>
