@@ -226,6 +226,12 @@ a:-webkit-any-link {
   font-size: 30px;
 }
 
+.bildtext {
+  margin-top: -20px; 
+  margin-bottom: 45px;
+  font-size: 25px;
+}
+
 /* MEDIAQUERYS */
 
 @media screen and (max-width: 992px) {
@@ -251,6 +257,12 @@ a:-webkit-any-link {
 
   .menu-container {
   font-size: 13vw;
+}
+
+.bildtext {
+    margin-top: -10px; 
+  margin-bottom: 100px;
+  font-size: 50px;
 }
 
 
