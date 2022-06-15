@@ -15,6 +15,11 @@ html {
   overflow-x:hidden;
 }
 
+.video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
 
 @font-face {
   font-family: comic;
@@ -46,7 +51,7 @@ html {
   margin-left: 2vh;
   margin-right: 1vh;
   margin-left: 1vh;
-  height: 7.15vh;
+  height: 9.5vh;
   line-height: 6.3vh;
   border-radius: 25px;
 }
